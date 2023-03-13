@@ -14,6 +14,10 @@ body{
     position: relative;
     margin-top: 220px; 
 }
+#footerinfo{
+    margin-top: 7px;
+    color: black;
+}
 h1{
     text-align: center;
     color: white;
@@ -22,15 +26,87 @@ h1{
 .container{
     margin-top: 100px;
     border-style: solid;
+    position: relative;
+
    
 }
 .row{
-    row-gap: 15px;
+    row-gap: 35px;
     column-gap: 15px;
 }
+
 .col{
     border-style: solid;
     height: 250px; 
     width: 250px;
     
+
+    
 }
+.flex-container{
+    border-style: solid;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 240px;
+    margin-left: -15px;
+
+    
+}
+.flex-container2{
+    border-style: solid;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: -15px;
+    margin-left: 0px;
+
+    
+}
+.gridtext{
+    
+}
+.gridtext2{
+    
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-left: 10px;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    margin-left: 10px;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    margin-left: 10px;
+    
+  }
+  #col1{
+   margin-bottom: 30px;
+   height: 400px;
+  }
+  #col2{
+    
+  }
+  #col3{
+    
+  }
+  #col4{
+    
+  }
