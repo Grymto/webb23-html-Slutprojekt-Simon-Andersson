@@ -10,10 +10,15 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
+    <script src="java.js" defer></script>
+
+  </head>
 
   <body>
     <script
@@ -23,7 +28,6 @@
     ></script>
 
     <header>
-
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">Meny</a>
@@ -44,7 +48,9 @@
               style="--bs-scroll-height: 100px"
             >
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Info.html">Om mig!</a>
@@ -60,55 +66,111 @@
                   Link
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Projekt.html">Projekt 1</a></li>
-                  <li><a class="dropdown-item" href="Projekt2.html">Projekt 2</a></li>
-                  <li><a class="dropdown-item" href="Projekt3.html">Projekt 3</a></li>
-                  <li><a class="dropdown-item" href="Projekt4.html">Projekt 4</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Projekt.html">Projekt 1</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Projekt2.html">Projekt 2</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Projekt3.html">Projekt 3</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Projekt4.html">Projekt 4</a>
+                  </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a class="dropdown-item" href="index.html">Galleri</a>
                   </li>
                 </ul>
               </li>
-              
+              <button id="buttondrk" onclick="myFunction()" style="color: #000000;"><img class="moon" src="/image/moon.svg" alt="moon"></button>
             </ul>
           </div>
         </div>
       </nav>
-</header>
+    </header>
+    <h1>Galleri</h1>
 
-<main>
+    <main>
+      <div class="grid-colums2">
+      <div class="container text-center">
+        <div class="row row-cols-2">
+          <div class="col">
+            <div class="box container text-center">
+              <div class="col">
+                <a style="display: block" href="Projekt.html">
+                  <div class="row">
+                    <img id="indexbild1" class="galleribilder" src="image\Startsida.png" alt="">
+                  </div>
+                </a>
+                <div class="row">
+                  <b><h2>Intergrill</h2></b>
+                  <p>Hemsida till resturangen Intergrill</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="box container text-center">
+              <div class="col">
+                <a style="display: block" href="Projekt2.html">
+                  <div class="row">
+                    <img id="indexbild2" class="galleribilder" src="image/placeholder1" alt="">
+                  </div>
+                </a>
+                <div class="row">
+                  <b><h2>Projekt 2</h2></b>
+                  <p>Hemsida till Projekt 2</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <div class="container">
-        <div class="row">
-          <div class="col">Projekt 1
-            <div class="flex-container">
-              <div class="gridtext">text 1</div>
+          <div class="col">
+            <div class="box container text-center">
+              <div class="col">
+                <a style="display: block" href="Projekt3.html">
+                  <div class="row">
+                    <img id="indexbild3" class="galleribilder" src="image/placeholder2" alt="">
+                  </div>
+                </a>
+                <div class="row">
+                  <b><h2>Projekt 3</h2></b>
+                  <p>Hemsida till Projekt 3</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col">Projekt 2
-            <div class="flex-container">
-              <div class="gridtext">text 2</div>
+
+          <div class="col">
+            <div class="box container text-center">
+              <div class="col">
+                <a style="display: block" href="Projekt4.html">
+                  <div class="row">
+                    <img id="indexbild4" class="galleribilder" src="image/Placeholder4.png" alt="">
+                  </div>
+                </a>
+                <div class="row">
+                  <b><h2>Projekt 4</h2></b>
+                  <p>Hemsida till Projekt 4</p>
+                  
+                </div>
+              </div>
             </div>
           </div>
-          <div class="w-100"></div>
-          <div class="col">Projekt 3
-            <div class="flex-container">
-              <div class="gridtext">text 3</div>
-            </div>
-          </div>
-          <div class="col">Project 4
-            <div class="flex-container">
-              <div class="gridtext">text 4</div>
-            </div>
-          </div>
+
         </div>
       </div>
+    </div>
+    </main>
 
-</main>
-    
-
-    <footer id="footer" class="text-center text-white" style="background-color: #f1f1f1">
+    <footer
+      id="footer"
+      class="text-center text-white"
+      style="background-color: #f1f1f1"
+    >
       <!-- Grid container -->
       <div class="containericons">
         <!-- Section: Social media -->
@@ -116,20 +178,24 @@
           <!-- Facebook -->
           <a href="https://sv-se.facebook.com/" class="fa fa-facebook"></a>
 
-           <!-- Twitter -->
-           <a href="https://twitter.com/?lang=sv" class="fa fa-twitter"></a>
+          <!-- Twitter -->
+          <a href="https://twitter.com/?lang=sv" class="fa fa-twitter"></a>
 
           <!-- Linkedin -->
           <a href="https://se.linkedin.com/" class="fa fa-linkedin"></a>
-          
-          <p id="footerinfo" > Email: Simon.Andersson1@live.com <br>
-          Tele: 0705786499</p>
+      <details>
+          <p id="footerinfo">
+            Email: Simon.Andersson1@live.com <br />
+            Tele: 0705786499
+          </p>
+      </details>
         </section>
         <!-- Section: Social media -->
       </div>
       <!-- Grid container -->
 
       <!-- Copyright -->
+    <small>
       <div
         class="text-center text-dark p-3"
         style="background-color: rgba(0, 0, 0, 0.2)"
@@ -137,6 +203,7 @@
         © 2023 Copyright
         <a class="text-dark" href="https://mdbootstrap.com/"></a>
       </div>
+    </small>
       <!-- Copyright -->
     </footer>
   </body>
